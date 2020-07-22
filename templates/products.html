@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="icon" href="./static/favicon.ico">
+        <link rel="stylesheet" href="./static/bootstrap-4.4.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./static/pro10.css">
+        <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f931c8600.js" crossorigin="anonymous"></script>
+        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+        <style>
+            #in{
+                pointer-events: none;
+            }
+
+            .mod_label{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bolder;
+        
+            }
+            
+            .data{
+                font-family: 'Montserrat', sans-serif;
+            }
+        </style>
+
+    </head>
+
+    <body>
+        
+
+        <!-- Nav Menu Starts -->
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-blue fixed-top">
+                
+            <a class="navbar-brand heading" href="#">Online Organic Store</a>
+    
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/">Home</a>
+                </li>
+    
+                <li class="nav-item dropdown" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_farmer_signin">Farmer</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_buyer_signin">Buyer</a>
+                    </div>
+                </li>
+    
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#feat">About</a>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#footer">Contact</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+        <!-- Nav Menu Ends -->
+
+        <!-- Vertical Menu Starts-->
+
+        <div class="sidebar">
+            <a href="http://127.0.0.1:5000/my_cart"><i class="fas fa-shopping-cart"></i>  My cart </a>
+            <a href="http://127.0.0.1:5000/to_products" class="nav-link sub-heading dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-apple-alt"></i>  Products </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item sub-heading2" href="#veg">Vegetables</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item sub-heading2" href="#fru">Fruits</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item sub-heading2" href="#dairy">Dairy</a>
+          </div>
+            <a href="http://127.0.0.1:5000/to_updateaddress2"><i class="fas fa-map-marker-alt"></i>  Change Address </a>
+            <a href="http://127.0.0.1:5000/"><i class="fas fa-sign-out-alt"></i>  Sign-off</a>
+          </div>
+
+        <!-- Vertical Menu Ends -->
+
+        <!-- Product section Begins -->
+
+        <!-- Vegetables -->
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <span style="margin-left: 330px; float:left;" class="span2" id="veg"><i class="fas fa-carrot"></i><span style="border-bottom: 2px solid #3fc5f0;font-size:x-large;">  Vegetables</span></span>
+
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Tomato.jpg" value="2000" class="img-responsive inline-block" alt="Responsive image" >
+                            <div class="overlay">
+                                <div class="text">Tomato</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Capsicum.jpg" value="2003" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Capsicum</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Onion.jpg" value="2004" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Onion</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Green_chilli.jpg" value="2005" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Green Chilli</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Carrot.jpg" value="2009" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Carrot</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Beetroot.jpg" value="2020" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Beetroot</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Brinjal.jpg" value="2021" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Brinjal</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Peas.jpg" value="2022" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Peas</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+
+              <hr>
+
+              <!-- Fruits -->
+
+              <br>
+
+              <span style="margin-left: 330px; float:left;" class="span2" id="fru"><i class="fas fa-apple-alt"></i><span style="border-bottom: 2px solid #3fc5f0;">  Fruits</span></span>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Apple.jpg" value="2001" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Apple</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Pineapple.jpg" value="2006" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Pineapple</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Orange.jpg" value="2007" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Orange</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Watermelon.jpg" value="2023" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Watermelon</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Banana.jpg" value="2024" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Banana</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+
+              <hr>
+
+              <!-- Dairy -->
+
+              <br>
+              <span style="margin-left: 330px; float:left;" class="span2" id="dairy"><i class="fas fa-cheese"></i><span style="border-bottom: 2px solid #3fc5f0;">  Dairy</span></span>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+              <div class="row" style="margin-left: 330px;">
+                <div id="small-img" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center">
+                  <ul>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Milk.jpg" value="2002" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Milk</div>
+                              </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="container" data-toggle="modal" data-target="#myModal">
+                            <img src="./static/Images/Curd.jpg" value="2008" class="img-responsive inline-block" alt="Responsive image">
+                            <div class="overlay">
+                                <div class="text">Curd</div>
+                              </div>
+                        </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <br>
+              <br>
+              <br>
+              <br>
+
+
+        </div>    
+
+        <!-- Product section Ends -->
+
+        {% if succ==1: %}
+        <script>
+            alert("Cart created");
+        </script>
+        {% endif %}
+
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title"  style="font-family: 'Montserrat', sans-serif;"><i class='fas fa-cart-plus'></i> Add product</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                  
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="return-up">
+            <a href="#"><i class="fas fa-angle-double-up fa-2x"></i></a>
+        </div>
+          
+          {% if success==0: %}
+          <script>
+              alert("Required quantity unavailable");
+          </script>
+          {% endif %}
+
+          {% if success==1: %}
+          <script>
+              alert("Product added to cart");
+          </script>
+          {% endif %}
+
+          <script>
+            $(document).ready(function(){
+                console.log("NOOOOB");
+                $(".container").click(function(e){
+                    console.log($(e.target).parent().find('img').attr("value")); //find('td:eq(0)')
+                    var product_id= $(e.target).parent().find('img').attr("value");
+                    var js_obj = {prod_id:product_id};
+                    var str = JSON.stringify(js_obj);
+                    console.log(js_obj);
+                    $.ajax({
+                        url:'http://127.0.0.1:5000/to_check',
+                        method:'POST',
+                        data:str,
+                        dataType:'json',
+                        success:function(ret){
+                            if(ret.status===true) {
+                                $('.modal-body').html("<form  action='http://127.0.0.1:5000/add_cart' method='POST'>" +
+                                    "<label class='mod_label'>Product ID</label>" +
+                                    "<br>" +
+                                    "<input class='data' type='text' name='p_id' id='in' value='" + ret.product_id +"'>" +
+                                    "<br>" +
+                                    "<br>" +
+                                    "<label class='mod_label'>Enter the required quantity</label>" +
+                                    "<br>" +
+                                    "<input class='data' type='text' name='req_quan' maxlength='6' required>" +
+                                    "<br>" +
+                                    "<br>" +
+                                    "<input class='data' type='submit' value='Add to Cart'>" +
+                                "</form>");
+                            }
+                            else {
+                                $(".modal-body").html("<h5>Not Available</h5>");
+                            }
+                        }
+                    })
+                });
+            });
+
+            /* 
+             $(".row_click").click(function(e){
+                      var clicked_value = $(e.target).parent().find('td:eq(0)').text();
+            */
+        </script>          
+    </body>
+</html>

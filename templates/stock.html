@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock Entry</title>
+        <link rel="icon" href="./static/favicon.ico">
+        <link rel="stylesheet" href="./static/bootstrap-4.4.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./static/pro3.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f931c8600.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Nav Menu Starts -->
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-yellow fixed-top">
+                
+            <a class="navbar-brand heading" href="#">Online Organic Store</a>
+    
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/">Home</a>
+                </li>
+    
+                <li class="nav-item dropdown" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_farmer_signin">Farmer</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_buyer_signin">Buyer</a>
+                    </div>
+                </li>
+    
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#feat">About</a>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#footer">Contact</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+        <!-- Nav Menu Ends -->
+
+        <!-- Vertical Menu Starts-->
+
+        <div class="sidebar">
+            <a href="http://127.0.0.1:5000/to_myStock"><i class="fas fa-user"></i>  My stock(s) </a>
+            <a href="http://127.0.0.1:5000/to_addStock"><i class="fas fa-plus-circle"></i>  Add stock </a>
+            <a href="http://127.0.0.1:5000/to_updateStock"><i class="fas fa-pen"></i>  Update stock </a>
+            <a href="http://127.0.0.1:5000/to_updateaddress1"><i class="fas fa-map-marker-alt"></i>  Change Address </a>
+            <a href="http://127.0.0.1:5000/to_updatelocation"><i class="far fa-edit"></i>  Change Stock Location </a>
+            <a href="http://127.0.0.1:5000/"><i class="fas fa-sign-out-alt"></i>  Sign-off</a>
+        </div>
+
+        <!-- Vertical Menu Ends-->        
+        
+        <!-- Form Section Begins -->
+
+        <form action="http://127.0.0.1:5000/add_stock" method="POST">
+            <div class="signupbox1" style="margin-left: 150px;">
+            
+                <h2 style="position:absolute;top:-300px;">Stock Entry Details</h2><br>
+    
+                <div style="position:absolute;top:-420px;">
+
+                <label class="data" style="position: relative;right:0px;">Enter capacity</label>
+                
+                <div class="textbox">
+                    <input type="text" name="s_cap" maxlength="13" required>
+                </div>
+
+                <h4 class="h44">Location Details</h4>
+    
+                <label class="data">Enter door number</label>
+    
+                <div class="textbox">
+                    <input type="text" name="s_doorno" maxlength="3" required>
+                </div>
+    
+                <label class="data">Enter street name</label>
+    
+                <div class="textbox">
+                    <input type="text" name="s_street" required>
+                </div>
+    
+                <label class="data">Enter locality</label>
+    
+                <div class="textbox">
+                    <input type="text" name="s_locality" required>
+                </div>
+    
+                <label class="data">Enter city</label>
+    
+                <div class="textbox">
+                    <input type="text" name="s_city" required>
+                </div>
+    
+                <label class="data">Enter pincode</label>
+    
+                <div class="textbox">
+                    <input type="text" name="s_pincode" maxlength="6" required>
+                </div>
+
+                <br>
+                <br>
+    
+                <input type="submit" class="btn" name="submit_btn" value="Add Stock"><br>
+    
+            </div>
+            </div>
+        </form>
+
+        <!-- Form Section Ends -->
+
+    </body>
+</html>

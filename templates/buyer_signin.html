@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+    <title>Buyer Sign-In</title>
+    <link rel="icon" href="./static/favicon.ico">
+    <link rel="stylesheet" href="./static/bootstrap-4.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="./static/pro2.css">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6f931c8600.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body class="body-buyer">
+
+    <!--Nav Menu-->
+
+    <nav class="navbar navbar-expand-lg navbar-light navbar-green">
+                
+        <a class="navbar-brand heading" href="#">Online Organic Store</a>
+
+        <ul class="navbar-nav ml-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link sub-heading" href="http://127.0.0.1:5000/">Home</a>
+            </li>
+
+            <li class="nav-item dropdown" style="margin-left: 50px;">
+                <a class="nav-link sub-heading dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_farmer_signin">Farmer</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_buyer_signin">Buyer</a>
+                </div>
+            </li>
+
+            <li class="nav-item" style="margin-left: 50px;">
+                <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#feat">About</a>
+            </li>
+            
+            <li class="nav-item" style="margin-left: 50px;">
+                <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#footer">Contact</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <!--Nav Menu Ends-->
+
+    <!-- Form Section Starts -->
+
+    <form action="http://127.0.0.1:5000/buyer_validation" method="POST">
+        <div class="loginbox">
+            
+            <h2>Buyer Sign-In</h2>
+            
+            <div class="textbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="Enter email-id" name="email_id">
+            </div>
+            
+            <div class="textbox">
+                <i class="fas fa-lock"></i>
+                <input type="password" placeholder="Enter ID" name="buyer_identity">
+            </div>
+
+            {% if flag == 1: %}
+            <p style="margin-bottom: -50px; text-align:center; font-family: 'Montserrat', sans-serif; margin-top:30px">Incorrect email-id or password!</p>
+            {% endif %}
+
+            <br>
+
+            <input type="submit" class="btn" name="submit_btn" value="Sign In"><br>
+
+            <hr>
+
+        </div>
+
+    </form>
+
+    <!-- Form Section Ends -->
+
+    <br>
+
+    <!-- For new users -->
+
+    <h5>Don't have an account? <a href="http://127.0.0.1:5000/to_buyer_signup" style="color: white;"><em><u>Sign up</u></em></a></h5>
+
+</body>

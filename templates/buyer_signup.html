@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Buyer Sign-up</title>
+        <link rel="icon" href="./static/favicon.ico">
+        <link rel="stylesheet" href="./static/bootstrap-4.4.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./static/pro4.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f931c8600.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Nav Menu Starts -->
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-blue fixed-top">
+                
+            <a class="navbar-brand heading" href="#">Online Organic Store</a>
+    
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/">Home</a>
+                </li>
+    
+                <li class="nav-item dropdown" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_farmer_signin">Farmer</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_buyer_signin">Buyer</a>
+                    </div>
+                </li>
+    
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#feat">About</a>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading" href="http://127.0.0.1:5000/#footer">Contact</a>
+                </li>
+    
+            </ul>
+        </nav>
+
+        <!-- Nav Menu Ends -->
+
+        <!-- Form Section Begins -->
+
+        <form action="http://127.0.0.1:5000/buyer_signup" method="POST">
+            <div class="signupbox">
+            
+                <h2 style="position:absolute;top:100px;">Buyer Sign-Up</h2><br>
+
+                <h4 class="h41">Personal Details</h4>
+    
+                <label class="data" style="position: relative;right:0px;">Enter name</label>
+                
+                <div class="textbox">
+                    <input type="text" name="b_name" required>
+                </div>
+    
+                <label class="data">Enter age</label>
+                
+                <div class="textbox">
+                    <input type="text" name="b_age" maxlength="2" required>
+                </div>
+    
+                <label class="data">Enter gender</label>
+    
+                <div class="textbox">
+                    <select name="b_gender"><option value="M">Male</option><option value="F">Female</option></select required>
+                </div>
+
+                <h4 class="h43">Contact Details</h4>
+    
+                <label class="data">Enter contact</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_contact" maxlength="10" required>
+                </div>
+    
+                <label class="data">Enter email-id</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_email" required>
+                </div>
+    
+                <label class="data">Enter door number</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_doorno" maxlength="3" required>
+                </div>
+    
+                <label class="data">Enter street name</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_street" required>
+                </div>
+    
+                <label class="data">Enter locality</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_locality" required>
+                </div>
+    
+                <label class="data">Enter city</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_city" required>
+                </div>
+    
+                <label class="data">Enter pincode</label>
+    
+                <div class="textbox">
+                    <input type="text" name="b_pincode" maxlength="6" required>
+                </div>
+
+                <br>
+                <br>
+    
+                <input type="submit" class="btn" name="submit_btn" value="Sign Up"><br>
+    
+            </div>
+        </form>
+
+        <!-- Form Section Ends -->
+
+    </body>
+
+</html>

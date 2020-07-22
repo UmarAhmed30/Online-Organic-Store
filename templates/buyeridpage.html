@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Buyer ID Page</title>
+        <link rel="icon" href="./static/favicon.ico">
+        <link rel="stylesheet" href="./static/bootstrap-4.4.1-dist/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./static/pro5.css">
+        <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/6f931c8600.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    </head>
+
+    <body class="body-buyer">
+
+        <!--Nav Menu-->
+
+        <nav class="navbar navbar-expand-lg navbar-light navbar-blue">
+                    
+            <a class="navbar-brand heading" href="#">Online Organic Store</a>
+
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item">
+                    <a class="nav-link sub-heading0" href="http://127.0.0.1:5000/">Home</a>
+                </li>
+
+                <li class="nav-item dropdown" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading0 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sign In</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_farmer_signin">Farmer</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item sub-heading1" href="http://127.0.0.1:5000/to_buyer_signin">Buyer</a>
+                    </div>
+                </li>
+
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading0" href="http://127.0.0.1:5000/#feat">About</a>
+                </li>
+                
+                <li class="nav-item" style="margin-left: 50px;">
+                    <a class="nav-link sub-heading0" href="http://127.0.0.1:5000/#footer">Contact</a>
+                </li>
+
+            </ul>
+        </nav>
+
+        <!--Nav Menu Ends-->
+
+        <div class="id-display">
+            <h2>Welcome to Online organic Store! </h2>
+            <h2>Hope you will have a great experience being assocaited with us! 💙</h2>
+
+            <br>
+            <br>
+
+            <hr class="hr-blue">
+
+            <br>
+            <br>    
+
+            <h3>Hello {{ bname }}!</h3>
+            <h3><i class="fas fa-key"></i>  Your password is {{ buyer_id }}  <i class="fas fa-key"></i></h3>
+
+            <br>
+            <br>
+
+            <hr class="hr-blue">
+
+            <br>
+            <br>
+
+            <h4>We generate your password for your utmost security! 🔒</h4>
+
+            <br>
+            <br>
+
+            <ul class="rules">
+                <li>Kindly make note of your password and don't forget it. In case you forget it, remember to contact us.</li><br>
+                <li>Don’t let the browsers remember your password.</li><br>
+                <li>Share your password with no one.</li><br>
+                <li>Remember to sign-out</li><br>
+            </ul>
+
+            <hr class="hr-blue">
+
+            <br>
+            <br>
+
+            <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1" width="20px" height="20px">
+                <label class="form-check-label" for="exampleCheck1" style="font-size: 20px;">I have read the terms &amp; conditions</label>
+            </div>
+
+            <br>
+            <br>
+
+            <hr class="hr-blue"> 
+
+            <br>
+            <br>
+            
+            <button id="btn" class="btn2">Go to Sign In</button>
+        </div>
+
+        <!--Footer Section Starts-->
+
+        <section id="footer2">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook social-icon"></i></a>
+            <a href="https://www.instagram.com/"><i class="fab fa-instagram social-icon"></i></a>
+            <a href="https://twitter.com/login"><i class="fab fa-twitter social-icon"></i></a>
+            <a href="https://www.google.com/intl/en_in/gmail/about/"><i class="fas fa-envelope social-icon"></i></a>
+            <a href="https://contacts.google.com/"><i class="fas fa-phone social-icon"></i></a>
+            <p style="font-family:'Montserrat', sans-serif; font-weight: bold;">&copy; Copyright 2020 Online Organic Store</p>
+        </section>
+
+        <!--Footer Section Ends-->
+
+        <script type="text/javascript">
+            document.getElementById("btn").onclick = function(){
+                location.href="http://127.0.0.1:5000/to_buyer_signin";
+            }
+        </script>
+    </body>
+</html>
